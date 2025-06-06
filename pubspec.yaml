@@ -1,0 +1,69 @@
+name: smart_app
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Firebase والمصادقة
+  firebase_core: ^2.30.0
+  firebase_auth: ^4.17.4
+  # تعدد اللغات
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
+
+  # إدارة ملفات env
+  flutter_dotenv: ^5.1.0
+
+  # تسجيل الدخول بحساب Google
+  google_sign_in: ^6.2.1
+  sign_in_button: ^3.2.0
+
+  # إذن الوصول لجهات الاتصال
+  permission_handler: ^11.3.1
+
+  # قراءة جهات الاتصال من الجهاز
+  flutter_contacts: ^1.1.7
+
+  # مشاركة نصوص وروابط
+  share_plus: ^7.2.1
+
+  # فتح الروابط/التطبيقات مثل واتساب
+  url_launcher: ^6.2.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+
+  uses-material-design: true
+  generate: true
+
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/translations/
+    - lib/l10n/
+    - .env
+    - assets/images/smart_app_icon_clear.png
+    - assets/icons/Whatsapp-removebg-preview.png
+
+  # مثال على تفعيل الخطوط لاحقًا
+  # fonts:
+  #   - family: Tajawal
+  #     fonts:
+  #       - asset: fonts/Tajawal-Regular.ttf
